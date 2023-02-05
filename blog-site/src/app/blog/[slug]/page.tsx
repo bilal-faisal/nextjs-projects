@@ -1,7 +1,3 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-
 // Find the file corresponsing to slug
 // Polulate that inside the page
 
@@ -13,21 +9,11 @@ type Blog = {
   message?: string;
 };
 
-const Slug = () => {
-  let pathName = usePathname();
+const Slug = async ({ searchParams }: any) => {
+  let slug = searchParams.slug;
 
-  const [blog, setblog] = useState<Blog>();
-
-  useEffect(() => {
-    let slug = pathName?.slice(6);
-    fetch(`http://localhost:3000/api/getBlog?slug=${slug}`)
-      .then((p) => {
-        return p.json();
-      })
-      .then((data) => {
-        setblog(data);
-      });
-  }, []);
+  let data = await fetch(`http://localhost:3000/api/getBlog?slug=${slug}`);
+  let blog = await data.json();
 
   return (
     <>
@@ -46,6 +32,6 @@ const Slug = () => {
       </div>
     </>
   );
-}
+};
 
 export default Slug;
