@@ -11,7 +11,7 @@ type Blog = {
   content: string;
 };
 
-const Blog = async () => {
+async function Blog(){
   let data = await fetch("http://localhost:3000/api/blogs");
   let blogs = await data.json();
 
@@ -25,7 +25,8 @@ const Blog = async () => {
                 <div className="pb-2" key={blogItem.slug}>
                   <Link
                     href={{
-                      pathname: `/blog/${blogItem.slug}`,
+                      // pathname: `/blog/${blogItem.slug}`,
+                      pathname: `/blogpost`,
                       query: {
                         slug: blogItem.slug,
                       },
