@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import {
   Box,
   Flex,
@@ -7,7 +9,6 @@ import {
   Stack,
   Collapse,
   Icon,
-  Link,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -269,22 +270,22 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
+    label: "Specialization",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
+        label: "Blockchain",
+        subLabel: "6 month track",
         href: "#",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Web3.0 and Metaverse Development",
+        subLabel: "1 year track",
         href: "#",
       },
     ],
   },
   {
-    label: "Hire Designers",
-    href: "#",
+    label: "Blog",
+    href: "/blog",
   },
 ];
