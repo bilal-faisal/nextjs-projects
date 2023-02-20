@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "../styles/blog.module.css";
 
 // Collect all the files from the blogdata directory
 // Iterate and display them
@@ -31,7 +30,6 @@ async function Blog() {
                         slug: blogItem.slug,
                       },
                     }}
-                    className={styles.link}
                   >
                     <h5 className="h5">{blogItem.title}</h5>
                   </Link>

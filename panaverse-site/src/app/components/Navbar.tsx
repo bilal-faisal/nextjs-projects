@@ -61,7 +61,7 @@ export default function Navbar() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Image src="/red-p-logo-text_dao_croped.png" width={121} height={70} alt="Picture" />
+            <Link href={"/"}><Image src="/red-p-logo-text_dao_croped.png" width={121} height={70} alt="Picture" /></Link>
           </Text>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -121,6 +121,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Link
                 p={4}
+                className="p-3"
                 href={navItem.href ?? "#"}
                 fontSize={"sm"}
                 fontWeight={500}
