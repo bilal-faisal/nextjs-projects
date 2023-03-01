@@ -10,9 +10,9 @@ const Home = () => {
   let [todo, settodo] = useState("");
 
   function addTodoFunc(e: any) {
-    todo = todo.trim()
-    settodo(todo)
-    if (todo == ''){
+    todo = todo.trim();
+    settodo(todo);
+    if (todo == "") {
       return;
     }
 
@@ -24,7 +24,7 @@ const Home = () => {
         }
       }
     }
-    
+
     if (can) {
       let newTodo = {
         text: `${todo}`,
@@ -32,10 +32,22 @@ const Home = () => {
       };
       settodos([...todos, newTodo]);
       settodo("");
-    }else{
-      alert("Task already exists")
+    } else {
+      alert("Task already exists");
     }
   }
+
+  function deleteTodoFunc(e: any) {
+    let newTodos = todos.filter((elem) => {
+      if (e.target.name == elem.text) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    settodos(newTodos);
+  }
+
   function inputHandleFunc(e: any) {
     settodo(e.target.value);
   }
@@ -68,19 +80,31 @@ const Home = () => {
       <ul className="ml-6">
         {todos.map((elem) => {
           return (
-            <li
-              key={elem.text}
-              className={
-                elem.completed === true ? "text-green-500" : "text-red-500"
-              }
-            >
+            <li key={elem.text}>
               <input
                 type="checkbox"
                 name={elem.text}
                 checked={elem.completed}
                 onChange={checkBoxFunc}
+                className="hover:cursor-pointer"
               />
-              <span className="pl-3 text-lg">{elem.text}</span>
+              <span
+                className={
+                  elem.completed === true
+                    ? "text-green-500 pl-3 text-lg"
+                    : "text-red-500 pl-3 text-lg"
+                }
+              >
+                {elem.text}
+              </span>
+
+              <button
+                className="ml-3 underline"
+                onClick={deleteTodoFunc}
+                name={elem.text}
+              >
+                Delete
+              </button>
             </li>
           );
         })}
