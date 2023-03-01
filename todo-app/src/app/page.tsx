@@ -64,19 +64,23 @@ const Home = () => {
     <>
       <h1 className="p-3 text-2xl font-bold">Todo App</h1>
 
-      <span className="ml-4 my-2">Add Todo:</span>
-      <input
-        type="text"
-        className="ml-2 border border-black pl-1"
-        value={todo}
-        onChange={inputHandleFunc}
-        autoFocus
-      />
-      <button className="ml-4 px-3 border border-black" onClick={addTodoFunc}>
-        Add
-      </button>
-
-      <p className="pl-4 text-xl my-2">Todos:</p>
+      <div className="mt-4 mb-6">
+        <span className="ml-4">Add Task:</span>
+        <input
+          type="text"
+          className="ml-2 border border-black pl-1"
+          value={todo}
+          onChange={inputHandleFunc}
+          autoFocus
+        />
+        <button
+          className="ml-4 px-3 border border-black hover:bg-slate-100"
+          onClick={addTodoFunc}
+        >
+          Add
+        </button>
+      </div>
+      <p className="pl-4 text-xl mt-4 mb-2">Todos:</p>
       <ul className="ml-6">
         {todos.map((elem) => {
           return (
