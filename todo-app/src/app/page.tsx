@@ -1,10 +1,5 @@
-import React from "react";
-
 const Home = () => {
-  return (
-    <>
-    </>
-  );
+  return <>Todo App</>;
 };
 
 export default Home;
