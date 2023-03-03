@@ -62,7 +62,7 @@ const Home = () => {
   }
   return (
     <>
-      <h1 className="p-3 text-2xl font-bold">Todo App</h1>
+      <h1 className="py-5 text-4xl text-center font-bold">Todo App</h1>
 
       <div className="mt-4 mb-6">
         <span className="ml-4">Add Task:</span>
@@ -74,7 +74,7 @@ const Home = () => {
           autoFocus
         />
         <button
-          className="ml-4 px-3 border border-black hover:bg-slate-100"
+          className="ml-4 px-3 border border-black hover:bg-gray-200"
           onClick={addTodoFunc}
         >
           Add
