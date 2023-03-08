@@ -2,7 +2,7 @@ import Skill_Item from "@/components/Skill_Item";
 
 const Skill_Items = () => {
   return (
-    <div className="flex ml-10 py-5 flex-wrap">
+    <div className="flex py-5 flex-wrap">
       <Skill_Item name={"HTML"} />
       <Skill_Item name={"CSS"} />
       <Skill_Item name={"Bootstrap"} />

@@ -6,7 +6,7 @@ interface Skill {
 
 const Heading = ({ name }: Skill) => {
   return (
-    <div className="flex items-center ml-10 mr-3 mt-3">
+    <div className="flex items-center mr-3 mt-3">
       <Bullet_Icon />
       <span className="w-3"></span>
       <h2 className="text-3xl text-[#34678C] flex-shrink">{name}</h2>

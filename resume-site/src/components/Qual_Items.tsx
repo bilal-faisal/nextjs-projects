@@ -2,7 +2,7 @@ import Qual_Item from "@/components/Qual_Item";
 
 const Qual_Items = () => {
   return (
-    <div className="flex flex-col ml-10 py-4 flex-wrap">
+    <div className="flex flex-col py-4 flex-wrap">
       <Qual_Item
         name={"BS Information Technology"}
         area={"PUCIT, Lahore"}

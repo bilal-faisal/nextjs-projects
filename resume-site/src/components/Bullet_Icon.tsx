@@ -4,7 +4,7 @@ const Bullet_Icon = () => {
   return (
     <>
       <Image
-        src="/big-icon.png"
+        src="/bullet_icon.png"
         width={35}
         height={35}
         alt="profile"
