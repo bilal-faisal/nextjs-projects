@@ -8,6 +8,7 @@ import Contact_Items from "@/components/Contact_Items";
 import Project_Item from "@/components/Project_Item";
 import Project_Items from "@/components/Project_Items";
 import Certification_Items from "@/components/Certification_Items";
+import About from "@/components/About";
 
 const Home = () => {
   return (
@@ -18,8 +19,7 @@ const Home = () => {
         <Profile />
 
         <div className="text-center lg:hidden">
-          <h1 className="text-5xl text-[#34678C]">Bilal Faisal</h1>
-          <p className="text-lg text-[#F47A7A]">Associate Software Engineer</p>
+          <About />
         </div>
 
         <Heading name={"Skills"} />
@@ -35,8 +35,9 @@ const Home = () => {
         <Extra_Contact_Items/> */}
       </div>
       <div className="flex flex-col flex-wrap px-10 my-10 bg-white lg:w-2/3 lg:border-l-2 lg:border-[#34678C]">
-        <h1 className="text-5xl text-[#34678C]">Bilal Faisal</h1>
-        <p className="text-lg text-[#F47A7A]">Associate Software Engineer</p>
+        <div className="md:hidden">
+          <About />
+        </div>
         <Contact_Items />
 
         <Heading name={"Projects"} />
