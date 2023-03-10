@@ -12,7 +12,7 @@ const Project_Item_Extra = ({ name, points }: Project) => {
       <h2 className="text-lg font-semibold">{name}</h2>
       {points.map((point) => {
         return (
-          <div className="flex items-center ml-4">
+          <div className="flex items-center ml-4" key={`${point}`}>
             <Image
               src={tick}
               width={18}

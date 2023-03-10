@@ -12,7 +12,7 @@ const Project_Item = ({ name, desc, points }: Project) => {
       <p className="text-md text-gray-800">{desc}</p>
       <ul className="list-disc ml-10">
         {points.map((point) => {
-          return <li className="text-[#F47A7A]"><span className="text-gray-800">{point}</span> </li>;
+          return <li className="text-[#F47A7A]" key={`${point}`}><span className="text-gray-800">{point}</span> </li>;
         })}
       </ul>
     </div>
