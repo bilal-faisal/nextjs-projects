@@ -2,7 +2,7 @@ interface Contact {
   name: String;
   value: String;
 }
-const Extra_Contact_Item = ({ name, value }: Contact) => {
+const Sidebar_Contact_Item = ({ name, value }: Contact) => {
   return (
     <div className="ml-3 mb-1">
       <h2 className="text-lg font-semibold">{name}:</h2>
@@ -11,4 +11,4 @@ const Extra_Contact_Item = ({ name, value }: Contact) => {
   );
 };
 
-export default Extra_Contact_Item;
+export default Sidebar_Contact_Item;
