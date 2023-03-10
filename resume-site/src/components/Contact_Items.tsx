@@ -1,65 +1,37 @@
-import phone from "../../public/phone.png";
-import location from "../../public/location.png";
-import mail from "../../public/mail.png";
-import linkedin from "../../public/linkedin.png";
-import github from "../../public/github.png";
-
-import Image from "next/image";
+import Contact_Item from "./Contact_Item";
 
 const Contact_Items = () => {
   return (
     <div className="flex my-5 flex-wrap">
       <div className="flex flex-col w-fit">
-        <div className="flex my-1 items-start ">
-          <Image
-            src={phone}
-            height={25}
-            alt={`phone_icon`}
-            className="rounded-md"
-          />
-          <p className="px-3">0310-1710479</p>
-        </div>
-
-        <div className="flex my-1 items-start">
-          <Image
-            src={location}
-            height={25}
-            alt={`location_icon`}
-            className="rounded-md"
-          />
-          <p className="px-3">Block H1, Johar Town, Lahore</p>
-        </div>
-
-        <div className="flex my-1 items-start">
-          <Image
-            src={mail}
-            height={25}
-            alt={`mail_icon`}
-            className="rounded-md"
-          />
-          <p className="px-3">bilalfaisal.developer@gmail.com</p>
-        </div>
+        <Contact_Item
+          img={"phone.png"}
+          url={"tel:+923101710479"}
+          text={"0310-1710479"}
+        />
+        <Contact_Item
+          img={"location.png"}
+          url={"https://goo.gl/maps/3wFQA9A3G9eYqrAYA"}
+          text={"Block H1, Johar Town, Lahore"}
+        />
+        <Contact_Item
+          img={"mail.png"}
+          url={"mailto:bilalfaisal.developer@gmail.com"}
+          text={"bilalfaisal.developer@gmail.com"}
+        />
       </div>
       <div className="flex flex-col w-fit">
-        <div className="flex my-1 items-start">
-          <Image
-            src={github}
-            height={25}
-            alt={`github_icon`}
-            className="rounded-md"
-          />
-          <p className="px-3">github.com/bilal-faisal</p>
-        </div>
-
-        <div className="flex my-1 items-start">
-          <Image
-            src={linkedin}
-            height={25}
-            alt={`linkedin_icon`}
-            className="rounded-md"
-          />
-          <p className="px-3">linkedin.com/in/bilal-faisal</p>
-        </div>
+        <Contact_Item
+          img={"github.png"}
+          url={"https://github.com/bilal-faisal"}
+          text={"github.com/bilal-faisal"}
+        />
+        <Contact_Item
+          img={"linkedin.png"}
+          url={"https://www.linkedin.com/in/bilal-faisal/"}
+          text={"linkedin.com/in/bilal-faisal"}
+          // key={"linkedin.png"}
+        />
       </div>
     </div>
   );

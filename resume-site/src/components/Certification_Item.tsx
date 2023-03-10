@@ -11,7 +11,7 @@ const Certification_Item = ({ name, desc, content, subname }: Project) => {
   return (
     <div className="ml-2 mb-3">
       <h2 className="text-lg font-semibold">
-        {name} <span className="font-thin">{subname}</span>
+        {name} <span className="font-normal text-sm">{subname}</span>
       </h2>
       <p className="text-md text-gray-800">{desc}</p>
       <p className="text-md text-gray-900 pl-5">Course Content:</p>

@@ -3,7 +3,6 @@ import Skill_Items from "@/components/Skill_Items";
 import P_Skill_Items from "@/components/P_Skill_Items";
 import Qual_Items from "@/components/Qual_Items";
 import Profile from "@/components/Profile";
-import Extra_Contact_Items from "@/components/extra_Contact_Items";
 import Contact_Items from "@/components/Contact_Items";
 import Project_Items from "@/components/Project_Items";
 import Certification_Items from "@/components/Certification_Items";
@@ -30,9 +29,7 @@ const Home = () => {
 
         <Heading name={"Qualifications"} />
         <Qual_Items />
-
-        {/* <Heading name={"Contact"} />
-        <Extra_Contact_Items/> */}
+        
       </div>
       <div className="flex flex-col flex-wrap lg:px-10 px-5 lg:my-10 my-0 bg-white lg:w-2/3 lg:border-l-2 lg:border-[#34678C]">
         <div className="hidden lg:block">
