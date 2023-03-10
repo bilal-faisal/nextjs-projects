@@ -10,7 +10,7 @@ const Contact_Items = () => {
   return (
     <div className="flex my-5 flex-wrap">
       <div className="flex flex-col w-fit">
-        <div className="flex my-1">
+        <div className="flex my-1 items-start ">
           <Image
             src={phone}
             height={25}
@@ -20,7 +20,7 @@ const Contact_Items = () => {
           <p className="px-3">0310-1710479</p>
         </div>
 
-        <div className="flex my-1">
+        <div className="flex my-1 items-start">
           <Image
             src={location}
             height={25}
@@ -30,7 +30,7 @@ const Contact_Items = () => {
           <p className="px-3">Block H1, Johar Town, Lahore</p>
         </div>
 
-        <div className="flex my-1">
+        <div className="flex my-1 items-start">
           <Image
             src={mail}
             height={25}
@@ -41,7 +41,7 @@ const Contact_Items = () => {
         </div>
       </div>
       <div className="flex flex-col w-fit">
-        <div className="flex my-1">
+        <div className="flex my-1 items-start">
           <Image
             src={github}
             height={25}
@@ -51,7 +51,7 @@ const Contact_Items = () => {
           <p className="px-3">github.com/bilal-faisal</p>
         </div>
 
-        <div className="flex my-1">
+        <div className="flex my-1 items-start">
           <Image
             src={linkedin}
             height={25}

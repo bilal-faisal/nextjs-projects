@@ -5,7 +5,6 @@ import Qual_Items from "@/components/Qual_Items";
 import Profile from "@/components/Profile";
 import Extra_Contact_Items from "@/components/extra_Contact_Items";
 import Contact_Items from "@/components/Contact_Items";
-import Project_Item from "@/components/Project_Item";
 import Project_Items from "@/components/Project_Items";
 import Certification_Items from "@/components/Certification_Items";
 import About from "@/components/About";
@@ -13,13 +12,14 @@ import About from "@/components/About";
 const Home = () => {
   return (
     <div className="flex flex-wrap">
-      <div className="flex flex-col pl-10 flex-wrap my-10 bg-white lg:w-1/3 ">
-        {/* <div className="flex flex-col flex-wrap my-10 bg-white lg:w-1/3 lg:border-r-2 lg:border-[#34678C]"> */}
-
+      <div className="flex flex-col flex-wrap lg:px-8 px-5 lg:my-10 mb-0 mt-5 bg-white lg:w-1/3 ">
         <Profile />
 
-        <div className="text-center lg:hidden">
+        <div className="text-center lg:hidden block">
           <About />
+        </div>
+        <div className="lg:hidden block">
+          <Contact_Items />
         </div>
 
         <Heading name={"Skills"} />
@@ -34,11 +34,11 @@ const Home = () => {
         {/* <Heading name={"Contact"} />
         <Extra_Contact_Items/> */}
       </div>
-      <div className="flex flex-col flex-wrap px-10 my-10 bg-white lg:w-2/3 lg:border-l-2 lg:border-[#34678C]">
-        <div className="md:hidden">
+      <div className="flex flex-col flex-wrap lg:px-10 px-5 lg:my-10 my-0 bg-white lg:w-2/3 lg:border-l-2 lg:border-[#34678C]">
+        <div className="hidden lg:block">
           <About />
+          <Contact_Items />
         </div>
-        <Contact_Items />
 
         <Heading name={"Projects"} />
         <Project_Items />
