@@ -1,6 +1,6 @@
 import Skill_Item from "@/components/Skill_Item";
 
-const P_Skill_Items = () => {
+const Professional_Skill_Items = () => {
   return (
     <div className="flex py-5 flex-wrap">
       <Skill_Item name={"Self-Motivated"} />
@@ -10,4 +10,4 @@ const P_Skill_Items = () => {
   );
 };
 
-export default P_Skill_Items;
+export default Professional_Skill_Items;

@@ -1,12 +1,12 @@
+import About from "@/components/About";
 import Heading from "@/components/Heading";
-import Skill_Items from "@/components/Skill_Items";
-import P_Skill_Items from "@/components/P_Skill_Items";
-import Qual_Items from "@/components/Qual_Items";
 import Profile from "@/components/Profile";
+import Qual_Items from "@/components/Qual_Items";
+import Skill_Items from "@/components/Skill_Items";
+import Professional_Skill_Items from "@/components/Professional_Skill_Items";
 import Contact_Items from "@/components/Contact_Items";
 import Project_Items from "@/components/Project_Items";
 import Certification_Items from "@/components/Certification_Items";
-import About from "@/components/About";
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
         <Skill_Items />
 
         <Heading name={"Professional Skills"} />
-        <P_Skill_Items />
+        <Professional_Skill_Items />
 
         <Heading name={"Qualifications"} />
         <Qual_Items />
