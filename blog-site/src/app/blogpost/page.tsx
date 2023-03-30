@@ -9,11 +9,20 @@ type Blog = {
   message?: string;
 };
 
+async function getData(slug:string) {
+  let res = await fetch(`http://localhost:3000/api/getBlog?slug=${slug}`);
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data');
+  }
+  return res.json();
+}
+
 async function Slug({ searchParams }: any) {
   let slug = searchParams.slug;
-  let data = await fetch(`http://localhost:3000/api/getBlog?slug=${slug}`);
-  let blog = await data.json();
+  const blog = await getData(slug);
 
+// console.log(blog)
   return (
     <>
       <div className="container">
