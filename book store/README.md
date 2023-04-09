@@ -1,6 +1,6 @@
 # Book Store Next13
 
-[Book Store Next13](https://github.com/bilal-faisal/panaverse-website)
+[Book Store Next13](https://github.com/bilal-faisal/book-store-nextjs)
 
 
 ## Installation
